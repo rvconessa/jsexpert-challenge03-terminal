@@ -122,4 +122,4 @@ project
 
 ## Até quando?
 
-Se você está pegando esse desafio na estréia, corre lá e envia pra gente até *Quarta-feira, 12 de janeiro de 2022 (15/12/2022)*!
+Se você está pegando esse desafio na estréia, corre lá e envia pra gente até *Quarta-feira, 12 de janeiro de 2022 (12/01/2022)*!
