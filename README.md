@@ -6,7 +6,7 @@ quanto pedir nas entrevistas internacionais! :D
 
 Tudo isso, claro, enquanto entendemos conceitos importantes para uma Interface de Linha de Comando (CLI), renderização de informações no terminal, internacionalização e ainda de quebra um pouco de ECMAScript modules, como visto no `JS Expect - Módulo 04`, que trata de `Conceitos fundamentais sobre o ciclo de vida do Javascript - parte 02`!
 
-Cada desafio funciona independentemente, então você não precisa ter completado os desafios anteriores para fazer esse, mas é claro que os desafios anteriores podem servir como uma ajuda extra na realização desse, já que eles não só refletem módulos anteriores do curso, como também trazem abordagens extremamente parecidas com a que vocês verão nesse desafio, então fica aqui a dica com a colinha:
+Cada desafio funciona **independentemente**, então você **não precisa** ter completado os desafios anteriores para fazer esse, mas é claro que os desafios anteriores podem servir como uma ajuda extra na realização desse, já que eles não só refletem módulos anteriores do curso, como também trazem abordagens extremamente parecidas com a que vocês verão nesse desafio, então fica aqui a dica com a colinha:
 
 * Assim como no [#Challenge 01](https://github.com/training-erickwendel/jsexpert-exercicio01-pokeapi), nesse desafio vocês vão seguir o pattern de service/repository para consumir uma API e trazer valores úteis para usar na nossa aplicação em terminal.
 
@@ -16,14 +16,13 @@ Cada desafio funciona independentemente, então você não precisa ter completad
 ## Funcionalidades
 
 ### Requisitos
-1. Usando a Mock API fornecida no projeto (que vocês podem conferir tanto diretamente no arquivo `server.json` quanto executando `npm run server` no terminal e conferindo a saída em `localhost:3000/convert`), escolha 3 das `moedas` retornadas para serem as suas moedas utilizadas no desafio (ex.: USD, EUR e RUB).
+1. Usando a Mock API fornecida no projeto (que você pode conferir tanto diretamente no arquivo `server.json` quanto executando `npm run server` no terminal e conferindo a saída em `localhost:3000/convert` no browser), escolha 3 das `moedas` retornadas para serem as suas moedas utilizadas no desafio (ex.: USD, EUR e RUB).
 
 2. Implemente uma aplicação em linha de comando como a que vocês podem ver no vídeo abaixo, utilizando as `moedas` escolhidas para a realização do desafio:
 
-> TODO: Inserir vídeo aqui
+https://user-images.githubusercontent.com/41883467/147079954-2ae5853d-8f1b-44a6-844f-396634bf7a89.mov
 
 > Nota: Não esqueça que existem alguns testes unitários para te ajudar com o que deve ser feito.
-
 
 3. Siga os `//@TODO: comments` espalhados pelo projeto para saber onde você deve mexer, e lembre-se que esse desafio envolverá muito mais criatividade que o anterior, então você terá que montar o quebra cabeça e ir descobrindo por onde começar a implementar cada função.
 
@@ -37,11 +36,11 @@ Cada desafio funciona independentemente, então você não precisa ter completad
 
 Seguindo o padrão que já usamos anteriormente, é esperado que com o desafio pronto, ao rodar `npm run test` todos os testes devem passar. O resultado deve ser algo parecido com isso:
 
-> TODO: Inserir imagem aqui
+![image](https://user-images.githubusercontent.com/41883467/147080202-a47b8873-6e00-4d4e-b94b-a5e95933c50b.png)
 
 ### Extras
 
-* [ ] Desafio opcional: Note que não existem testes criados para o `terminal.js`, caso queira, sinta-se livre para testar os métodos criados por você para a resolução desse desafio. 
+* [ ] Desafio opcional: Note que não existem testes criados para o `terminal.js`. Então, caso queira, sinta-se livre para testar os métodos criados por você para a resolução desse desafio. 
 
 > Dica: Para facilitar sua jornada nesses testes, lembre que não só Injeção de dependências é vida em termos de testes automatizados, mas as variáveis de referência também (como é o caso dos `this.print`, `this.data` e `this.terminal`), então centrar seus testes nessas variáveis pode ser uma boa idéia.
 
