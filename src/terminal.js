@@ -13,9 +13,39 @@ class CustomTerminal {
   }
 
   initialize() {
-    // TODO: Initialize your terminal with the main instance
+    DraftLog(console).addLineListener(process.stdin)
+    this.termial = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+    this.initializeTable();
   }
-  // TODO: You'll need more methods down here as well, be creative
+
+  initializeTable() {
+    const table = chalkTable(TABLE_OPTIONS, this.data);
+    this.print = console.draft(table);
+  }
+
+  updateData(item) {
+    this.data.push(item);
+  }
+
+  question(msg = '') {
+    return new Promise(resolve => this.termial.question(msg, resolve));
+  }
+
+  errorMessage(message) {
+    this.print = console.log(chalk.red(message));
+  }
+
+  successMessage(message) {
+    this.print = console.log(chalk.green(message));
+  }
+
+  closeTerminal() {
+    this.termial.close();
+  }
+
 }
 
 export default CustomTerminal;
